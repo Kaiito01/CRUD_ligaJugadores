@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane prefWidth="959.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joseugal.lligaFutbol.vistas.VerJugadoresController">
+   <tabs>
+      <Tab closable="false" text="Listado">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="40.0" text="CRUD - Lliga Futbol" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Apple Symbols" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="85.0" text="JUGADORES" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="80.0">
+                     <font>
+                        <Font name="Apple Symbols" size="25.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tbvPlayers" layoutX="40.0" layoutY="128.0" prefHeight="429.0" prefWidth="652.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="120.0">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="75.0" text="ID" />
+                      <TableColumn editable="false" prefWidth="161.0" text="Equipo" />
+                        <TableColumn editable="false" prefWidth="223.0" text="Nombre Completo" />
+                        <TableColumn editable="false" prefWidth="91.0" text="Dorsal" />
+                        <TableColumn editable="false" prefWidth="101.0" text="Edad" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TextField layoutX="448.0" layoutY="81.0" prefHeight="27.0" prefWidth="244.0" promptText="Buscar Jugador" AnchorPane.leftAnchor="448.0" AnchorPane.topAnchor="81.0" />
+                  <ImageView fitHeight="53.0" fitWidth="96.0" layoutX="863.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <image>
+                        <Image url="@../assets/logo-flux-large.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Crear">
+         <content>
+            <AnchorPane prefHeight="606.0" prefWidth="959.0">
+               <children>
+                  <Label layoutX="56.0" layoutY="71.0" text="CRUD - Lliga Futbol" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Apple Symbols" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="71.0" text="CREAR JUGADOR" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="80.0">
+                     <font>
+                        <Font name="Apple Symbols" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="108.0" text="Nombre:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="40.0" layoutY="169.0" prefHeight="27.0" prefWidth="276.0" promptText="Introduce nombre:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="169.0" />
+                  <Label layoutX="371.0" layoutY="140.0" text="Apellido:" AnchorPane.leftAnchor="371.0" AnchorPane.topAnchor="140.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="371.0" layoutY="169.0" prefHeight="27.0" prefWidth="276.0" promptText="Introduce apellido:" AnchorPane.leftAnchor="371.0" AnchorPane.topAnchor="169.0" />
+                  <Label layoutX="40.0" layoutY="229.0" text="Equipo:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="40.0" layoutY="276.0" prefHeight="27.0" prefWidth="271.0" promptText="Selecciona equipo" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="276.0" />
+                  <Label layoutX="39.0" layoutY="355.0" text="Fecha Nacimiento:" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="340.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker layoutX="39.0" layoutY="377.0" prefHeight="27.0" prefWidth="274.0" promptText="Introduce fecha" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="377.0" />
+                  <Label layoutX="371.0" layoutY="240.0" text="Dorsal:">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="371.0" layoutY="276.0" prefHeight="27.0" prefWidth="276.0" promptText="Introduce dorsal:" AnchorPane.leftAnchor="371.0" AnchorPane.topAnchor="276.0" />
+                  <Button layoutX="38.0" layoutY="470.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="129.0" text="Crear" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="470.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="187.0" layoutY="470.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="54.0" text="X" AnchorPane.leftAnchor="187.0" AnchorPane.topAnchor="470.0">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="53.0" fitWidth="96.0" layoutX="863.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <image>
+                        <Image url="@../assets/logo-flux-large.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

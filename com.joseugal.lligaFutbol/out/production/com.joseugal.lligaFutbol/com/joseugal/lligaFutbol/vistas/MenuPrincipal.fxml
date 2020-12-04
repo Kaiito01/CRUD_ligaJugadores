@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="265.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joseugal.lligaFutbol.vistas.MenuPrincipalController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="38.0" prefHeight="32.0" prefWidth="274.0" text="CRUD lligaFutbol" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="38.0">
+         <font>
+            <Font name="Apple Symbols" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="143.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleActionButtonCargaCrudJugadores" text="Jugadores" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="98.0">
+         <font>
+            <Font name="Apple Symbols" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="143.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleActionButtonCargaCrudEquipos" prefHeight="35.0" prefWidth="98.0" text="Equipos" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="151.0">
+         <font>
+            <Font name="Apple Symbols" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="57.0" fitWidth="123.0" layoutX="131.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="136.53140258789062">
+         <image>
+            <Image url="@../assets/logo-flux-large.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
